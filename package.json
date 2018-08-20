@@ -12,7 +12,8 @@
     ],
     "activationEvents": [
         "onCommand:extension.reverseSelections",
-        "onCommand:extension.sortSelections"
+        "onCommand:extension.sortSelectionsAsc",
+        "onCommand:extension.sortSelectionsDesc"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -22,8 +23,12 @@
                 "title": "Reverse Selections"
             },
             {
-                "command": "extension.sortSelections",
-                "title": "Sort Selections"
+                "command": "extension.sortSelectionsAsc",
+                "title": "Sort Selections Ascending"
+            },
+            {
+                "command": "extension.sortSelectionsDesc",
+                "title": "Sort Selections Descending"
             }
         ],
         "keybindings": [
@@ -31,6 +36,18 @@
                 "command": "extension.reverseSelections",
                 "key": "ctrl+alt+b",
                 "mac": "cmd+alt+b",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.sortSelectionsAsc",
+                "key": "ctrl+alt+s",
+                "mac": "cmd+alt+s",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.sortSelectionsDesc",
+                "key": "ctrl+alt+shift+s",
+                "mac": "cmd+alt+shift+s",
                 "when": "editorTextFocus"
             }
         ]

@@ -3,6 +3,9 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { Range } from 'vscode';
+import { reverse } from './reverse';
+import { sortAsc } from './sort_asc';
+import { sortDesc } from './sort_desc';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -10,51 +13,13 @@ export function activate(context: vscode.ExtensionContext) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.reverseSelections', () => {
-        // The code you place here will be executed every time your command is executed
 
-        let editor = vscode.window.activeTextEditor;
-        if (!editor) {
-            return; // No open text editor
-        }
-
-        let selections = editor.selections;
-        editor.edit(editBuilder => {
-            let replacements = [...selections];
-            selections.forEach((s, i) => {
-                let range = new Range(s.start, s.end);
-                if (editor) {
-                    editBuilder.replace(range, editor.document.getText(replacements[replacements.length - (i+1)]));
-                }
-            });
-        });
-    });
-
-    context.subscriptions.push(disposable);
-
-    let sort = vscode.commands.registerCommand('extension.sortSelections', () => {
-        // The code you place here will be executed every time your command is executed
-
-        let editor = vscode.window.activeTextEditor;
-        if (!editor) {
-            return; // No open text editor
-        }
-
-        let selections = editor.selections;
-        editor.edit(editBuilder => {
-            let sorted = [...selections].sort((a,b) => (editor.document.getText(a) < editor.document.getText(b) ? -1 : 1));
-            selections.forEach((s, i) => {
-                let range = new Range(s.start, s.end);
-                if (editor) {
-                    editBuilder.replace(range, editor.document.getText(sorted[i]));
-                }
-            });
-        });
-    });
-
-    context.subscriptions.push(sort);
+    context.subscriptions.push(reverse());
+    context.subscriptions.push(sortAsc());
+    context.subscriptions.push(sortDesc());
 }
 
 // this method is called when your extension is deactivated
 export function deactivate() {
 }
+

@@ -1,7 +1,7 @@
 {
-    "name": "reverse-selections",
-    "displayName": "reverse-selections",
-    "description": "Revese contets of the selected regions.",
+    "name": "permute-selections",
+    "displayName": "permute-selections",
+    "description": "Permuting contents of the selected regions.",
     "version": "1.0.0",
     "publisher": "jaakkosadeharju",
     "engines": {
@@ -11,7 +11,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.reverseSelections"
+        "onCommand:extension.reverseSelections",
+        "onCommand:extension.sortSelections"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -19,6 +20,10 @@
             {
                 "command": "extension.reverseSelections",
                 "title": "Reverse Selections"
+            },
+            {
+                "command": "extension.sortSelections",
+                "title": "Sort Selections"
             }
         ],
         "keybindings": [

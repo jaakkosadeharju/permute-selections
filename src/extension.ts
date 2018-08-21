@@ -2,7 +2,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import { Range } from 'vscode';
 import { reverse } from './reverse';
 import { sortAsc } from './sort_asc';
 import { sortDesc } from './sort_desc';

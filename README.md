@@ -4,13 +4,14 @@ This is the README for your extension "permute-selections". After writing up a b
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+**Sort selections**
 
-For example if there is an image subfolder under your extension project workspace:
+Sort the selected regions.
 
-\!\[feature X\]\(images/feature-x.png\)
+**Reverse selections**
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Reverse the order of the selected regions.
+![Reverse selections](images/feature-x.png)
 
 ## Requirements
 
@@ -23,21 +24,3 @@ Users appreciate release notes as you update your extension.
 ### 1.0.0
 
 Initial release.
-
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

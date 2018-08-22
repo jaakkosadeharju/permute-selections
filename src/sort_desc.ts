@@ -15,7 +15,7 @@ export function sortDesc(): vscode.Disposable {
         let selections = editor.selections;
         editor.edit(editBuilder => {
             let sorted = [...selections];
-            sorted.sort((a, b) => (editor.document.getText(a).toLowerCase() > editor.document.getText(b).toLowerCase() ? -1 : 1));
+            sorted.sort((a, b) => (editor && editor.document.getText(a).toLowerCase() > editor.document.getText(b).toLowerCase() ? -1 : 1));
             selections.forEach((s, i) => {
                 let range = new Range(s.start, s.end);
                 if (editor) {

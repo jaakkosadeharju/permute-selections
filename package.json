@@ -4,6 +4,10 @@
     "description": "Permuting contents of the selected regions.",
     "version": "1.0.0",
     "publisher": "jaakkosadeharju",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npm/cli.git"
+    },
     "engines": {
         "vscode": "^1.26.0"
     },

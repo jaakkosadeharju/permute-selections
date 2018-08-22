@@ -6,7 +6,7 @@
     "publisher": "jaakkosadeharju",
     "repository": {
         "type": "git",
-        "url": "https://github.com/npm/cli.git"
+        "url": "https://github.com/jaakkosadeharju/permute-selections"
     },
     "engines": {
         "vscode": "^1.26.0"

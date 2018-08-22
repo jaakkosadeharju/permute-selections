@@ -1,73 +1,73 @@
 {
-    "name": "permute-selections",
-    "displayName": "Permute Selections",
-    "description": "Permuting contents of the selected regions.",
-    "version": "1.0.0",
-    "publisher": "jaakkosadeharju",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jaakkosadeharju/permute-selections"
-    },
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "categories": [
-        "Other"
+  "name": "permute-selections",
+  "displayName": "Permute Selections",
+  "description": "Permuting contents of the selected regions.",
+  "version": "1.0.1",
+  "publisher": "jaakkosadeharju",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaakkosadeharju/permute-selections"
+  },
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.reverseSelections",
+    "onCommand:extension.sortSelectionsAsc",
+    "onCommand:extension.sortSelectionsDesc"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.reverseSelections",
+        "title": "Reverse Selections"
+      },
+      {
+        "command": "extension.sortSelectionsAsc",
+        "title": "Sort Selections Ascending"
+      },
+      {
+        "command": "extension.sortSelectionsDesc",
+        "title": "Sort Selections Descending"
+      }
     ],
-    "activationEvents": [
-        "onCommand:extension.reverseSelections",
-        "onCommand:extension.sortSelectionsAsc",
-        "onCommand:extension.sortSelectionsDesc"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.reverseSelections",
-                "title": "Reverse Selections"
-            },
-            {
-                "command": "extension.sortSelectionsAsc",
-                "title": "Sort Selections Ascending"
-            },
-            {
-                "command": "extension.sortSelectionsDesc",
-                "title": "Sort Selections Descending"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "extension.reverseSelections",
-                "key": "ctrl+alt+b",
-                "mac": "cmd+alt+b",
-                "when": "editorTextFocus"
-            },
-            {
-                "command": "extension.sortSelectionsAsc",
-                "key": "ctrl+alt+s",
-                "mac": "cmd+alt+s",
-                "when": "editorTextFocus"
-            },
-            {
-                "command": "extension.sortSelectionsDesc",
-                "key": "ctrl+alt+shift+s",
-                "mac": "cmd+alt+shift+s",
-                "when": "editorTextFocus"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "tslint": "^5.8.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
-    }
+    "keybindings": [
+      {
+        "command": "extension.reverseSelections",
+        "key": "ctrl+alt+b",
+        "mac": "cmd+alt+b",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.sortSelectionsAsc",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.sortSelectionsDesc",
+        "key": "ctrl+alt+shift+s",
+        "mac": "cmd+alt+shift+s",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "tslint": "^5.8.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  }
 }

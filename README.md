@@ -5,11 +5,13 @@
 **Sort selections**
 
 Sort the selected regions.
+
 ![Reverse selections](images/sort.gif)
 
 **Reverse selections**
 
 Reverse the order of the selected regions.
+
 ![Reverse selections](images/reverse.gif)
 
 ## Release Notes

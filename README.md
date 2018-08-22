@@ -1,6 +1,4 @@
-# permute-selections README
-
-This is the README for your extension "permute-selections". After writing up a brief description, we recommend including the following sections.
+# Permute Selections
 
 ## Features
 
@@ -13,10 +11,6 @@ Sort the selected regions.
 
 Reverse the order of the selected regions.
 ![Reverse selections](images/reverse.gif)
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Release Notes
 

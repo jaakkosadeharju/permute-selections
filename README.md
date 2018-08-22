@@ -11,7 +11,7 @@ Sort the selected regions.
 **Reverse selections**
 
 Reverse the order of the selected regions.
-![Reverse selections](images/feature-x.png)
+![Reverse selections](images/reverse.gif)
 
 ## Requirements
 

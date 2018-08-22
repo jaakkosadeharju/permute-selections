@@ -1,6 +1,6 @@
 {
     "name": "permute-selections",
-    "displayName": "permute-selections",
+    "displayName": "Permute Selections",
     "description": "Permuting contents of the selected regions.",
     "version": "1.0.0",
     "publisher": "jaakkosadeharju",

@@ -7,6 +7,7 @@ This is the README for your extension "permute-selections". After writing up a b
 **Sort selections**
 
 Sort the selected regions.
+![Reverse selections](images/sort.gif)
 
 **Reverse selections**
 

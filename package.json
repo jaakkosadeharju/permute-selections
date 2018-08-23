@@ -2,7 +2,7 @@
   "name": "permute-selections",
   "displayName": "Permute Selections",
   "description": "Permuting contents of the selected regions.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "jaakkosadeharju",
   "repository": {
     "type": "git",

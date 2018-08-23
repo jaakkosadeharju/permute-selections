@@ -10,6 +10,7 @@ export function permute(sortingFun: Function): void {
     }
 
     let selections = editor.selections;
+    selections.sort((a, b) => (a.start.line < b.start.line ? -1 : (a.start.line === b.start.line ? (a.start.character < b.start.character ? -1 : 1) : 1)));
     editor.edit(editBuilder => {
         let permuted = sortingFun(selections, (e: vscode.Selection) => (editor ? editor.document.getText(e).toLowerCase() : ''));
         selections.forEach((s, i) => {

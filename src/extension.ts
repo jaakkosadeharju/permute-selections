@@ -2,6 +2,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { permute } from './permute';
 import { reverse } from './reverse';
 import { sortAsc } from './sort_asc';
 import { sortDesc } from './sort_desc';
@@ -13,9 +14,15 @@ export function activate(context: vscode.ExtensionContext) {
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
 
-    context.subscriptions.push(reverse());
-    context.subscriptions.push(sortAsc());
-    context.subscriptions.push(sortDesc());
+    context.subscriptions.push(vscode.commands.registerCommand('extension.reverseSelections', () => {
+        permute(reverse);
+    }));
+    context.subscriptions.push(vscode.commands.registerCommand('extension.sortSelectionsAsc', () => {
+        permute(sortAsc);
+    }));
+    context.subscriptions.push(vscode.commands.registerCommand('extension.sortSelectionsDesc', () => {
+        permute(sortDesc);
+    }));
 }
 
 // this method is called when your extension is deactivated

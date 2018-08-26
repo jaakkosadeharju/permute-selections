@@ -1,4 +1,5 @@
 # Permute Selections
+![Build](https://travis-ci.com/jaakkosadeharju/permute-selections.svg?branch=master)
 
 ## Features
 

@@ -1,6 +1,8 @@
 # Permute Selections
 ![Build](https://travis-ci.com/jaakkosadeharju/permute-selections.svg?branch=master)
 
+Modify the order of selected ranges. The extension currently supports sorting and reversing of the selected regions. 
+
 ## Features
 
 **Sort selections**
@@ -16,8 +18,6 @@ Reverse the order of the selected regions.
 ![Reverse selections](images/reverse.gif)
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
